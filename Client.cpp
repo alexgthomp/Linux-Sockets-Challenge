@@ -27,7 +27,7 @@ int main (int argc, char *argv[]){
     //Socket Initilization
     connectionAddr.sin_family = AF_INET;
     connectionAddr.sin_addr.s_addr = inet_addr("127.0.0.1");
-    connectionAddr.sin_port = htons(8080);
+    connectionAddr.sin_port = htons(9090);
     memset(connectionAddr.sin_zero, '\0', sizeof connectionAddr.sin_zero);
     int clientSocket = socket(AF_INET, SOCK_STREAM, 0);
     
